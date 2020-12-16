@@ -23,7 +23,7 @@ include './../app/autoload.php';
             <a href="<?=URL?>/paginas/sobre"><li>Sobre</li></a>
             <a href="#"><li>Layouts</li></a>
             <a href="#"><li>Contatos</li></a>
-            <a href="<?=URL?>/posts/cadastrar"><li>Mensagem</li></a>
+            <a href="<?=URL?>/posts/listar"><li>Mensagem</li></a>
             <!-- <?php/*
                 if($situacao == 1) {
                     echo "

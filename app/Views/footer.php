@@ -47,7 +47,7 @@
                 <a href="<?=URL?>"><li>Home</li></a>
                 <a href="<?=URL?>/paginas/sobre"><li>Sobre</li></a>
                 <a href="#"><li>Layouts</li></a>
-                <a href="<?=URL?>/posts/cadastrar"><li>Mensagem</li></a>
+                <a href="<?=URL?>/posts/listar"><li>Mensagem</li></a>
             </ul>
         </div>
         <div id="contatoFooter">
