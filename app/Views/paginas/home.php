@@ -61,6 +61,26 @@
                 ";
             }*/
         ?>
+
+        <?php foreach($dados['produtos'] as $produto): ?>
+            <div id="card">
+                <a href="<?= URL.'/produtos/vizualizarProduto/'.$produto->id ?>">
+                    <div id="img">
+                        <img src="<?= URL.'/public/img/'.$produto->img ?>" alt="<?=APP_NOME?>">
+                    </div>
+                </a>
+
+                <button class="collapsible">Saiba Mais</button>
+                <div class="content">
+                    <div id="produto">
+                        <h1 id="h1"><?= $produto->nome ?></h1>
+                        <p id="p"><?= $produto->descricao ?></p>
+                        <h2 id="h2">R$ <?= $produto->preco ?></h2>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach ?>
+
     </div>
 </section>
 
