@@ -161,7 +161,7 @@ html, body {
 
 /*ICON - MENU*/
 #container header #headerMenu #img {
-    width: 2%;
+    width: 3%;
     height: auto;
 
     cursor: pointer;
@@ -191,14 +191,14 @@ html, body {
 }
 
 #container header #headerMenu #person svg {
-    width: 70%;
+    width: 100%;
     height: auto;
 
 }
 
 /*LOGO*/
 #container header #headerMenu #logo {
-    width: 10%;
+    width: 12%;
     height: auto;
 
 }
@@ -432,7 +432,7 @@ html, body {
 }
 
 #container section #conteudo {
-    width: 80%;
+    width: 100%;
     height: auto;
 
     display: flex;
@@ -491,7 +491,7 @@ html, body {
     width: 100%;
     height: auto;
 
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
 
     color: var(--text-purple);
@@ -502,7 +502,7 @@ html, body {
     width: 100%;
     height: auto;
 
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
 
     color: var(--text-black);
@@ -531,7 +531,7 @@ html, body {
     width: 34%;
     height: auto;
 
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
 
     color: var(--text-white);
@@ -586,7 +586,7 @@ html, body {
 #container section #produtos {
     padding: 1%;
 
-    width: 78%;
+    width: 98%;
     height: auto;
 
     display: flex;
@@ -601,8 +601,8 @@ html, body {
 #container section #produtos #card {
     padding: 1%;
 
-    min-width: 31.3333%;
-    max-width: 31.3333%;
+    min-width: 48%;
+    max-width: 48%;
     height: auto;
 
     flex: 1;
@@ -1681,7 +1681,7 @@ html, body {
     width: 96%;
     height: auto;
 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 
     color: var(--text-purple);
@@ -1694,7 +1694,7 @@ html, body {
     width: 96%;
     height: auto;
 
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 
     color: var(--text-purple);
@@ -1707,7 +1707,7 @@ html, body {
     width: 96%;
     height: auto;
 
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 
     color: var(--text-black);
@@ -1728,7 +1728,7 @@ html, body {
     width: 96%;
     height: auto;
 
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 
     color: var(--text-black);
@@ -2048,7 +2048,7 @@ html, body {
 #container section #telaCadastro {
     padding: 5%;
 
-    width: 40%;
+    width: 50%;
     height: auto;
 
     display: flex;
@@ -3282,7 +3282,7 @@ html, body {
 }
 
 #container section #exibir #produto #informacao h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 
     color: var(--text-white);
@@ -3290,7 +3290,7 @@ html, body {
 }
 
 #container section #exibir #produto #informacao b {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 
     color: var(--text-blue-light);
@@ -3408,6 +3408,8 @@ html, body {
     align-items: center;
     justify-content: center;
 
+    font-size: 14px;
+
 }
 
 #container section #exibir #produto #exibirProduto #conteudoProduto #dadosProduto #dadosImg #marcaProduto p img {
@@ -3455,7 +3457,7 @@ html, body {
     width: 70%;
     height: auto;
 
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
 
     color: var(--text-blue);
@@ -3487,7 +3489,7 @@ html, body {
     width: 78%;
     height: auto;
 
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
 
     color: var(--text-orange);
@@ -3500,7 +3502,7 @@ html, body {
     width: 78%;
     height: auto;
 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 
     color: var(--text-black);
@@ -3565,7 +3567,7 @@ html, body {
 
     text-transform: uppercase;
 
-    font-size: 10px;
+    font-size: 8px;
 
 }
 
@@ -3598,7 +3600,7 @@ html, body {
 #container section #exibir #produto #exibirProduto #conteudoProduto #precoProduto #disponibilidade h2 {
     color: var(--text-light-green);
 
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
 
 }
@@ -3707,7 +3709,7 @@ html, body {
     background-color: var(--text-light-orange); /* For browsers that do not support gradients */
     background-image: linear-gradient(var(--text-light-orange) , var(--text-orange));
 
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 700;
 
     color: var(--text-white);
@@ -3785,7 +3787,7 @@ html, body {
     width: 88%;
     height: auto;
     
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
 
     color: var(--text-blue);
@@ -3845,7 +3847,7 @@ html, body {
     width: 100%;
     height: auto;
 
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
 
     color: var(--text-green);
@@ -3853,7 +3855,7 @@ html, body {
 }
 
 #container section #exibir #produto #exibirProduto #conteudoProduto #precoProduto #preco p b {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
 
     color: var(--text-black);
@@ -3874,7 +3876,7 @@ html, body {
     width: 20%;
     height: auto;
 
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
 
     color: var(--text-green);
@@ -3884,7 +3886,8 @@ html, body {
 #container section #exibir #produto #exibirProduto #conteudoProduto #precoProduto #preco #valor h2 {
     width: 30%;
     height: auto;
-    font-size: 22px;
+
+    font-size: 14px;
     font-weight: 600;
 
     color: var(--text-green);

@@ -14,6 +14,9 @@ include './../app/autoload.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= APP_NOME ?></title>
     <link rel="stylesheet" href="<?=URL?>/public/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="<?=URL?>/public/css/styleMax1023.css">
+    <link rel="stylesheet" media="screen and (min-width: 361px) and (max-width: 767px)" href="<?=URL?>/public/css/styleMax767.css">
+    <link rel="stylesheet" media="screen and (max-width: 360px)" href="<?=URL?>/public/css/styleMax360.css">
 
 </head>
 <body>
