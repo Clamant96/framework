@@ -62,7 +62,7 @@ class Posts extends Controller {
             
         endif;
 
-        var_dump($formulario);
+        //var_dump($formulario);
 
         $this->view('posts/cadastrar', $dados);
     }
@@ -77,6 +77,62 @@ class Posts extends Controller {
         ];
 
         $this->view('posts/ver', $dados);
+    }
+
+    public function editar($id) {
+        $formulario = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        if(isset($formulario)):
+            $dados = [
+                'id' => $id,
+                'titulo' => trim($formulario['titulo']),
+                'texto' => trim($formulario['texto'])
+            ];
+
+            if(in_array('', $formulario)):
+
+                if(empty($formulario['titulo'])):
+                    $dados['preencha_titulo'] = 'Preencha o campo <b>Titulo</b>';
+                endif;
+
+                if(empty($formulario['texto'])):
+                    $dados['preencha_texto'] = 'Preencha o campo <b>Texto</b>';
+                endif;
+
+            else:
+                if($this->postModel->atualizar($dados)):
+                    Sessao::mensagem('post', 'Mensagem editada com sucesso');
+                    //Url::redirecionar('posts/listar'); /*VERIFICAR PARA ONDE ESTA INDO*/
+                    Url::redirecionar('posts/listar');
+
+                else:
+                    die("Erro ao editar a mensagem");
+
+                endif;
+
+            endif;
+
+        else:
+            $post = $this->postModel->lerPostPorId($id);
+            
+            if($post->usuario_id != $_SESSION['usuario_id']):
+                Sessao::mensagem('post', 'Voce nao tem autorizacao para editar essa mensagem');
+                Url::redirecionar('posts/listar');
+
+            endif;
+
+            $dados = [
+                'id' => $post->id,
+                'titulo' => $post->titulo,
+                'texto' => $post->texto,
+                'preencha_titulo' => '',
+                'preencha_texto' => ''
+            ];
+            
+        endif;
+
+        //var_dump($formulario);
+
+        $this->view('posts/editar', $dados);
     }
     
 }

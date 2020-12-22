@@ -3961,6 +3961,160 @@ html, body {
 
 }
 
+/*MENU - MENSAGEM*/
+
+#container section #posts #editarPost {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    /* background-color: #07a4dc; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container section #posts #editarPost ul {
+    padding: 1%;
+
+    width: 88%;
+    height: auto;
+
+}
+
+#container section #posts #editarPost ul a {
+    text-decoration: none;
+
+}
+
+#container section #posts #editarPost ul a li {
+    font-size: 16px;
+    font-weight: 600;
+
+    color: var(--text-black);
+
+    list-style: none;
+
+    display: inline;
+
+}
+
+#container section #posts #editarPost ul li {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--text-black);
+
+    list-style: none;
+
+    display: inline;
+
+}
+
+#container section #posts #botoes {
+    padding: 1%;
+    margin-left: 5%;
+
+    width: 16%;
+    height: auto;
+
+    /* background-color: turquoise; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+
+}
+
+#container section #posts #botoes #comprar {
+    margin: 1%;
+
+    width: 98%;
+    height: auto;
+
+    background-color: var(--text-light-orange); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--text-light-orange) , var(--text-orange));
+
+    border-radius: 10px;
+
+}
+
+#container section #posts #botoes #comprar a {
+    text-decoration: none;
+
+    width: 100%;
+    height: auto;
+
+    /* background-color: violet; */
+
+    box-shadow: 0px 3px 5px -5px var(--box-shadown);
+    
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container section #posts #botoes #comprar a #icon {
+    padding: 3%;
+
+    width: 14%;
+    height: auto;
+
+    background-color: var(--text-light-blue-cart); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--text-light-blue-cart) , var(--text-blue-cart));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+#container section #posts #botoes #comprar a #icon svg {
+    width: 100%;
+    height: auto;
+
+    color: var(--text-white);
+
+}
+
+#container section #posts #botoes #comprar a p {
+    padding: 3%;
+
+    width: 74%;
+    height: auto;
+    
+    background-color: var(--text-light-orange); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--text-light-orange) , var(--text-orange));
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: var(--text-white);
+
+    text-transform: uppercase;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+/*------------*/
+
 #container section #posts #mensagem {
     padding: 1%;
 

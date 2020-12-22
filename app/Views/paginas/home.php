@@ -64,7 +64,7 @@
 
         <?php foreach($dados['produtos'] as $produto): ?>
             <div id="card">
-                <a href="<?= URL.'/produtos/vizualizarProduto/'.$produto->id ?>">
+                <a href="<?= URL.'/produtos/vizualizarProduto/'.$produto->urlProduto ?>">
                     <div id="img">
                         <img src="<?= URL.'/public/img/'.$produto->img ?>" alt="<?=APP_NOME?>">
                     </div>
@@ -104,7 +104,7 @@
                         <h1><?= $post->titulo ?>
                             <p id="data">
                                 <?= FormatacaoData::conversorDia($post->postDataCadastro) ?>
-                                por: <?= $post->nome ?>
+                                Escrito por: <?= $post->nome ?>
                             </p>
                         </h1>
                         <div id="avancar">

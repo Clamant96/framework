@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 session_start();
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
 date_default_timezone_set('America/Sao_Paulo');
@@ -51,3 +53,6 @@ include './../app/autoload.php';
     <script src="<?=URL?>/public/js/javascript.js"></script>
 </body>
 </html>
+<?php
+ob_end_flush();
+?>

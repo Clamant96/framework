@@ -14,9 +14,11 @@ class Produto {
         return $this->db->resultados();
     }
 
-    public function lerProdutoPorId($id) {
-        $this->db->query("SELECT * FROM tb_produtos WHERE id = :id");
-        $this->db->bind('id', $id);
+    public function lerProdutoPorId($urlProduto) {
+        /*$this->db->query("SELECT * FROM tb_produtos WHERE id = :id");
+        $this->db->bind('id', $id);*/
+        $this->db->query("SELECT * FROM tb_produtos WHERE urlProduto = :urlProduto");
+        $this->db->bind('urlProduto', $urlProduto); 
 
         return $this->db->resultado();
     }
