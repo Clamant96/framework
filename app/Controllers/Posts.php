@@ -34,10 +34,14 @@ class Posts extends Controller {
 
                 if(empty($formulario['titulo'])):
                     $dados['preencha_titulo'] = 'Preencha o campo <b>Titulo</b>';
+                else:
+                    $dados['preencha_titulo'] = ''; 
                 endif;
 
                 if(empty($formulario['texto'])):
                     $dados['preencha_texto'] = 'Preencha o campo <b>Texto</b>';
+                else:
+                    $dados['preencha_texto'] = ''; 
                 endif;
 
             else:
@@ -92,10 +96,14 @@ class Posts extends Controller {
 
                 if(empty($formulario['titulo'])):
                     $dados['preencha_titulo'] = 'Preencha o campo <b>Titulo</b>';
+                else:
+                    $dados['preencha_titulo'] = ''; 
                 endif;
 
                 if(empty($formulario['texto'])):
                     $dados['preencha_texto'] = 'Preencha o campo <b>Texto</b>';
+                else:
+                    $dados['preencha_texto'] = ''; 
                 endif;
 
             else:

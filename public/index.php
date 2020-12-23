@@ -29,6 +29,8 @@ include './../app/autoload.php';
             <a href="#"><li>Layouts</li></a>
             <a href="#"><li>Contatos</li></a>
             <a href="<?=URL?>/posts/listar"><li>Mensagem</li></a>
+            <a href="<?=URL?>/produtos/listar"><li>Listar Produtos</li></a>
+            <a href="<?=URL?>/produtos/cadastrar"><li>Cadastrar Produtos</li></a>
             <!-- <?php/*
                 if($situacao == 1) {
                     echo "
