@@ -601,11 +601,13 @@ html, body {
 #container section #produtos #card {
     padding: 1%;
 
-    min-width: 48%;
-    max-width: 48%;
+    min-width: 46%;
+    max-width: 46%;
     height: auto;
 
     flex: 1;
+
+    /* background-color: aquamarine; */
 
 }
 

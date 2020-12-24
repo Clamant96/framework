@@ -624,11 +624,13 @@ html, body {
 #container section #produtos #card {
     padding: 1%;
 
-    min-width: 98%;
-    max-width: 98%;
+    min-width: 96%;/*AJUSTADA A MARGEM*/
+    max-width: 96%;
     height: auto;
 
     flex: 1;
+
+    /* background-color: aquamarine; */
 
 }
 
