@@ -4,6 +4,8 @@ class Usuarios extends Controller {
 
     public function __construct() {
         $this->usuarioModel = $this->model('Usuario');
+        $this->postModel = $this->model('Post');
+        $this->produtoModel = $this->model('Produto');
     }
 
     public function cadastrar() {
@@ -179,6 +181,48 @@ class Usuarios extends Controller {
         session_destroy();
 
         Url::redirecionar('usuarios/login');
+
+    }
+
+    //RECEBE OS VALORES DA MENSAGEM PARA PODER MOSTRAR SEPADAS POR PERFIL
+    public function vizualizarPerfil($id) {
+        
+        $dados = [
+            'usuario' => $this->usuarioModel->lerUsuarioPorId($id),
+            'posts' => $this->postModel->listarPosts()
+            
+        ];
+
+        $this->view('usuarios/perfil', $dados);
+    }
+
+    public function vizualizarPedidos($id) {
+
+        $dados = [
+            'usuario' => $this->usuarioModel->lerUsuarioPorId($id)
+        ];
+
+        $this->view('usuarios/pedidos', $dados);
+    }
+
+    public function vizualizarMensagem($id) {
+        $dados = [
+            'produtos' => $this->produtoModel->listarProdutos(),
+            'usuario' => $this->usuarioModel->lerUsuarioPorId($id),
+            'usuarios' => $this->usuarioModel->listarUsuarios(),
+            'posts' => $this->postModel->listarPosts()
+        ];
+
+        $this->view('usuarios/mensagem', $dados);
+    }
+
+    public function excluir($id) {
+        if($this->usuarioModel->excluirConta($id)):
+            Sessao::mensagem('usuario', 'Usuario excluido com sucesso');
+            Url::redirecionar('usuarios/login');
+        else:
+            die("Erro ao excluir o produto");
+        endif;
 
     }
 
